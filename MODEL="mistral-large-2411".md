@@ -1,7 +1,7 @@
-MODEL="mistral-large-2411"
+MODEL="mistral-large-2411" '
 
 
-url="https://${us-central1}-aiplatform.googleapis.com/v1/projects/${snappy-run-446701-f0}/locations/${GOOGLE_REGION}/publishers/mistralai/models/${MODEL}:rawPredict"
+url="https://${us-central1}-aiplatform.googleapis.com/v1/projects/${}/locations/${GOOGLE_REGION}/publishers/mistralai/models/${MODEL}:rawPredict"
 
 curl \
   -X POST \
@@ -16,10 +16,10 @@ curl \
     ]
 }'
 
-//ryanoatsie@cloudshell:~ (snappy-run-446701-f0)$ MODEL="mistral-large-2411"
+//ryanoatsie@cloudshell:~()$ MODEL="mistral-large-2411"
 
 
-url="https://$GOOGLE_REGION-aiplatform.googleapis.com/v1/projects/$snappy-run-446701-f0/locations/$GOOGLE_REGION/publishers/mistralai/models/$MODEL:rawPredict"
+url="https://$GOOGLE_REGION-aiplatform.googleapis.com/v1/projects/$((/locations/$GOOGLE_REGION/publishers/mistralai/models/$MODEL:rawPredict"
 
 
 curl \
