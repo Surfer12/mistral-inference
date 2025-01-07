@@ -1,0 +1,22 @@
+
+
+Mistral Large (24.11)
+
+Region	Quota system	Supported context length
+us-central1	60 QPM, 200,000 TPM	128,000 tokens
+europe-west4	60 QPM, 200,000 TPM	128,000 tokens
+Mistral Large (2407)
+
+Region	Quota system	Supported context length
+us-central1	60 QPM, 200,000 TPM	128,000 tokens
+europe-west4	60 QPM, 200,000 TPM	128,000 tokens
+Mistral Nemo
+
+Region	Quota system	Supported context length
+us-central1	60 QPM, 200,000 TPM	128,000 tokens
+europe-west4	60 QPM, 200,000 TPM	128,000 tokens
+Codestral
+
+Region	Quota system	Supported context length
+us-central1	60 QPM, 200,000 TPM	32,000 tokens
+europe-west4	60 QPM, 200,000 TPM	32,000 tokens

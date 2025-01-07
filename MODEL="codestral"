@@ -1,0 +1,18 @@
+MODEL="codestral"
+MODEL_VERSION="2405"
+REGION=“us-central1”
+
+
+url="https://$REGION-aiplatform.googleapis.com/v1/projects/$PROJECT_ID/locations/$REGION/publishers/mistralai/models/$MODEL@$MODEL_VERSION:rawPredict"
+
+
+curl \
+  -X POST \
+  -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+  -H "Content-Type: application/json" \
+  $url \
+    --data '{
+      "model":"'"$MODEL"'",
+  "prompt": "def count_words_in_file(file_path: str):",
+  "suffix": "return n_words"
+}'
